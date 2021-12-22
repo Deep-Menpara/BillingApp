@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="5dp"
+    android:orientation="horizontal"
+    android:layout_height="100dp"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:layout_weight="3"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="5">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                style="@style/add_btn"
+                android:text="NAME"
+                android:id="@+id/homelist_tv_name"
+                android:layout_weight="2"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+
+                android:id="@+id/homelist_tv_weight"
+                android:text="WEIGHT"
+                style="@style/add_btn"
+
+                android:layout_weight="2"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    style="@style/add_btn"
+                    android:id="@+id/homelist_tv_price"
+                    android:text="PRICE"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:id="@+id/hme_btn_remove"
+                    android:text="REMOVE ITEM"
+                    android:background="@drawable/button"
+                    style="@style/home_btn"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:numberpicker="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            tools:context="com.travijuu.numberpicker.sample.MainActivity">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/add_btn"
+                android:id="@+id/homelist_tv_quantity"
+                android:text="QUANTITY"
+                />
+
+            <com.travijuu.numberpicker.library.NumberPicker
+                android:id="@+id/homelist_np_quantity"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                numberpicker:focusable="false"
+                numberpicker:max="50"
+                numberpicker:min="1"
+                numberpicker:unit="1"
+                numberpicker:value="-5" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:layout_width="0dp"
+            android:id="@+id/homelist_but_addtocart"
+            android:background="@drawable/button"
+            android:layout_height="match_parent"
+            android:text="ADD TO Cart"
+            android:layout_weight="2"
+            style="@style/cart_btn"
+
+
+            android:drawableTop="@mipmap/cart"/>
+
+
+    </LinearLayout>
+    
+    
+</LinearLayout>
+
+

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="5dp"
+    android:orientation="horizontal"
+    android:layout_height="120dp"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        xmlns:tools="http://schemas.android.com/tools"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            style="@style/add_btn"
+            android:text="NAME"
+            android:id="@+id/custdetails_tv_itemname"
+            android:layout_weight="2"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="WEIGHT"
+            android:id="@+id/custdetails_tv_itemweight"
+            style="@style/add_btn"
+            android:layout_weight="2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            style="@style/add_btn"
+            android:id="@+id/custdetails_tv_itemprice"
+            android:text="PRICE"
+
+            android:layout_weight="2"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            style="@style/add_btn"
+            android:text="QUANTITY:-"
+            android:id="@+id/custdetails_tv_itemquantity"
+            android:layout_weight="2"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            style="@style/add_btn"
+            android:text="TOTAL:-"
+            android:id="@+id/custdetails_tv_itemtotal"
+            android:layout_weight="2"/>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/add_btn"
+            android:gravity="center"
+            android:text="DATE"
+            android:id="@+id/custdetails_tv_itemdate"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
